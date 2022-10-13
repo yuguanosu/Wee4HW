@@ -1,5 +1,5 @@
 import XCTest
-import MyLibrary
+@testable import MyLibrary
 
 final class MyLibraryTests: XCTestCase {
     func testIsLuckyBecauseWeAlreadyHaveLuckyNumber() async {
@@ -69,4 +69,27 @@ final class MyLibraryTests: XCTestCase {
         XCTAssertNil(isLuckyNumber)
     }
 
+    //myunittest
+    func testWeatherModel() async {
+
+        let myTemp = Weather.self
+
+        XCTAssertNil(myTemp)
+    }
+
+/*
+    //my integration test
+    func testIsNotLuckyBecauseServiceCallFails123() async {
+        // Given
+        
+        let myLibrary = MyLibrary(weatherService: nil)
+
+        // When
+        let isLuckyNumber = await myLibrary.isLucky(7)
+
+        // Then
+        XCTAssertNotNil(isLuckyNumber)
+    }
+
+*/
 }
